@@ -1,0 +1,173 @@
+.listElement{
+    background-color: white;
+    width: 500px;
+    min-height: 20px;
+    padding: 10px 0;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media(width<800px){
+    .listElement{
+        width: 500px;
+    }
+}
+@media(width<500px){
+    .listElement{
+        width: 250px;
+    }
+}
+.listName{
+    width:90%;
+    margin: 0 24px 0 0;
+    text-align: left;
+}
+.listNameBack{
+    width: 90%;
+    margin: 24px 10% 0 0;
+    border-radius: 6px;
+    text-align: left;
+}
+.listTitleContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.listElementMoreMain{
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; 
+}
+.listElementMoreContainer{
+    width: 20%;
+    margin:20px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nextStudyDate{
+    width: 78%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.editIconMore{
+    transition-duration: 0.2s;
+}
+.editIconMore:hover{
+    border-radius: 360px;
+    cursor: pointer;
+}
+.moreOptionsListElement{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.moreOptionsBackground{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: #555555;
+    opacity: 0.7;
+}
+.moreOptionsIconMain{
+    position: relative;
+    z-index: 7;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.moreOptionsIconContainer{
+    border-radius:26px;
+    width: 80%;
+    height: 60%;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.moreQuestion{
+    margin-top: -30px;
+    color: black;
+    background-color: #eeeeee;
+    border-radius: 18px;
+    width: 80%;
+    padding: 20px 30px;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.moreQuestionMore{
+    color: black;
+    background-color: #eeeeee;
+    border-radius: 18px;
+    width: 50%;
+    padding: 20px 30px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.moreAnswerContainer{
+    width: 80%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.moreAnswer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    transition-duration: 0.2s;
+}
+.moreAnswer:nth-child(2){
+    background-color:#e9ecef;
+    color:black;
+    border: 1px solid black;
+}
+@media(width>1000px){
+    .moreOptionsIconContainer{
+        width: 50%;
+    }
+    .moreAnswerContainer{
+        width: 50%;
+    }
+    .moreAnswer{
+        width: 30%;
+    }
+}
+.moreAnswer:hover{
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}

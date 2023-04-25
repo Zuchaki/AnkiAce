@@ -1,0 +1,118 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyACo2OoOGSBOaHbdi1CGU0cV04gUgJecOs",
+  authDomain: "anki-app-5c08c.firebaseapp.com",
+  projectId: "anki-app-5c08c",
+  storageBucket: "anki-app-5c08c.appspot.com",
+  messagingSenderId: "174021346594",
+  appId: "1:174021346594:web:54937e810c897f952e117b"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+
+<DeckElement color1={tab[curr].color1} color2={tab[curr].color2} title={curr} toStudy={currNext} count={tab[curr].count}/>
+
+<DeckElement color1={tab[currNext].color1} color2={tab[currNext].color2} title={tab[currNext].title} toStudy={tab[currNext].toStudy} count={tab[currNext].count}/>
+
+
+//MyDecks
+const getDecks = () => {
+        if(!decks){
+            setDbDecks([]);
+        }
+        else{
+            setDbDecks(decks);
+        }
+
+        /*
+        try{        
+              const config = await {
+                params: {
+                  orderBy: '"localId"',
+                  equalTo: `"${auth.localId}"`
+                }
+              };
+
+            const res = await axios_decks.get(`decks.json`, config)
+            let newDbDecks = await [];
+            let e = await {}
+            for (const key in res.data){
+                e = res.data[key]
+                newDbDecks.push({color1:e.color1, color2:e.color2, title:e.title, toStudy:0, count:0, id:key})
+            }
+            await setDbDecks(newDbDecks);
+            //await setLoad(true); currently not used
+        }
+        catch(error){
+            console.log("error: ", error.response.data)
+        }
+        */
+
+    }
+
+
+//NewDeck
+const dbSend = async () => {
+        await newDeck(    {
+            color1: property.color1,
+            color2: property.color2,
+            title: property.title,
+            localId: auth.localId,
+            favorite: false
+        })
+        history("/profil")
+        
+        /*try{
+            //const res = await axiosFireBase.post(`hotels.json?auth=${auth.token}`, {
+            const res = await axios_decks.post(`decks.json?auth=${auth.idToken}`,{
+                color1: property.color1,
+                color2: property.color2,
+                title: property.title,
+                localId: auth.localId,
+                favorite: false
+            })
+            console.log(res)
+            history("/profil")
+        }
+        catch(error){
+            console.log(error)
+        }*/
+    }
+
+
+    //ChousenDeck
+     /*const favoriteOnClickHandler = async() => {
+        //check the login user
+        try{
+            const res = await axios_decks.get(`decks/${params.deckId}.json`)
+            if(res.data.localId===auth.localId){
+
+                //put favorite
+                try{
+                    const res = await axios_decks.put(`decks/${params.deckId}.json?auth=${auth.idToken}`,{
+                        color1:deckInfo.color1,
+                        color2:deckInfo.color2,
+                        title:deckInfo.title,
+                        favorite: !deckInfo.favorite,
+                        localId:auth.localId
+                    })
+                    await setDeckInfo({...deckInfo, favorite:!deckInfo.favorite});
+                }
+                //error put
+                catch(error){
+                    console.log(error)
+                }
+            }
+        }
+        //error auth check
+        catch(error){
+
+        }
+    }*/

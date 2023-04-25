@@ -1,0 +1,23 @@
+.google{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.google span{
+    margin-right: 6px;
+    font-size: 0.9rem;
+}
+.googleContainer{
+    color: #525252;
+    background-color: white;
+    padding: 3px 36px;
+    border-radius:8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    margin-bottom: 40px;
+    transition-duration: 0.2s;
+}
+.googleContainer:hover{
+    background-color: #8a8a8a;
+    color:white;
+    cursor: pointer;
+}
