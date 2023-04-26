@@ -64,3 +64,12 @@ It was not easy for me to create the hook **useSevenDayWeek.js**. I spent a lot 
 ```
 src/hooks/useSevenDayWeek.js
 ```
+**The hook returns an array with 7 elements:**
+```
+{
+    day: - day of the week (mon - sun) [1-7],
+    date: - day of the month [1-31],
+    future: - is this date in future from now? [true/false],
+    theDay: - is this date today date? [true/false],,
+    planned: - Never used now but i kept it for potential development of the application
+}
