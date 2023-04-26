@@ -89,3 +89,12 @@ React Icons is a library of popular icon packs that can be easily used in React 
 
 ### I experimented with the composition of folders and files.
 I tried to organize most of the files and folders into the **/pages** folder and sorted them according to the part of the website ther are responsible for, but in the end, I think it was a bad idea. It's better to create a **/components** folder.
+
+# What I'm proud
+I'm proud of all component StudyPanel.js with all functions
+```
+src/Pages/MainPanel/Content/StudyPanel/StudyPanel.js
+```
+
+# Future projects?
+In future i will definitly use **TypeScript** and **more liberys**. For UI i planed to use [**And Design**](https://ant.design/)
