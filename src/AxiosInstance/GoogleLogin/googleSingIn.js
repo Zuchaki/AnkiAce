@@ -8,12 +8,12 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyACo2OoOGSBOaHbdi1CGU0cV04gUgJecOs",
-  authDomain: "anki-app-5c08c.firebaseapp.com",
-  projectId: "anki-app-5c08c",
-  storageBucket: "anki-app-5c08c.appspot.com",
-  messagingSenderId: "174021346594",
-  appId: "1:174021346594:web:54937e810c897f952e117b"
+  apiKey: process.env.REACT_APP_KEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_APIID
 };
 
 

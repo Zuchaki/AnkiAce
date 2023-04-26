@@ -4,7 +4,7 @@ const instance = axios.create({
     baseURL: "https://identitytoolkit.googleapis.com/v1/",
 
     params: {
-        key: "AIzaSyACo2OoOGSBOaHbdi1CGU0cV04gUgJecOs"
+        key: process.env.REACT_APP_KEY
     }
 })
 

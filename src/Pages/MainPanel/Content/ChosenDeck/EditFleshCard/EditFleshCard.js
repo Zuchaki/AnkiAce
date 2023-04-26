@@ -112,7 +112,7 @@ export default function EditFleshCard(props){
                         </div>
                     </div>
                 </div>
-                    <div className={style.add} onClick={createFleshCard}>Dodaj</div>
+                    <div className={style.add} onClick={createFleshCard}>Edytuj</div>
             </div>
         </div>
         </>

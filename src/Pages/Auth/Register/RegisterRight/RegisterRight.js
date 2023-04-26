@@ -158,7 +158,7 @@ export default function RegisterRight(){
                     {valid.email&valid.pass&valid.repPass&stat?
                         <button className={style.button}>Zarejestruj</button>:<div className={style.buttonDisable}>Podaj dane</div>
                     }
-                    {width<1100?<div className={style.google}><GoogleSingIn/></div>:<></>}
+                    {/*width<1100?<div className={style.google}><GoogleSingIn/></div>:<></>*/}
                 </form>
                 <Link to="/login" className={style.forgetPass}>Mam już konto</Link>
                 

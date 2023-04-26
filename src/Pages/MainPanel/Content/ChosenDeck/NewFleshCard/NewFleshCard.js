@@ -7,6 +7,7 @@ import axios_decks from "../../../../../AxiosInstance/axios-decks"
 import useAuth from "../../../../../hooks/useAuth";
 import {MdAddTask} from "react-icons/md"
 import { useParams } from "react-router-dom";
+import useSizeScreen from "../../../../../hooks/useSizeScreen";
 
 export default function NewFleshCard(props){
     useEffect(() => {
@@ -47,6 +48,9 @@ export default function NewFleshCard(props){
     const [currentDate] = useDate();
     const params = useParams();
     const [added, setAdded] = useState(false)
+    const [width, height] = useSizeScreen();
+    const [page, setPage] = useState(true);
+
     //<div className={style.preview} dangerouslySetInnerHTML={{ __html:value}}/>
 
     const createFleshCard = async () => {
@@ -88,9 +92,12 @@ export default function NewFleshCard(props){
           <div>Dodanow nową fiszkę!</div>
         </div>:<></>}
         <div className={style.container}>
+        {width<1100?<div className={style.trun} onClick={()=>setPage(!page)}>Obróć</div>:<></>}
             <div className={style.col}>
                 <div className={style.row}>
+                  {page|width>1100?
                     <div className={style.col}>
+                      {console.log(valueFront)}
                         <div className={style.sideName}>Przód</div>
                         <div className={style.editor}>
                             <ReactQuill 
@@ -102,7 +109,8 @@ export default function NewFleshCard(props){
                                 style={{border:`2px solid ${props.color}`}}
                             />
                         </div>
-                    </div>
+                    </div>:<></>}
+                    {!page|width>1100?
                     <div className={style.col}>
                         <div className={style.sideName}>Tył</div>
                         <div className={style.preview}>
@@ -115,7 +123,7 @@ export default function NewFleshCard(props){
                                 style={{border:`2px solid ${props.color}`}}
                             />
                         </div>
-                    </div>
+                    </div>:<></>}
                 </div>
                     <div className={style.add} onClick={createFleshCard}>Dodaj</div>
             </div>

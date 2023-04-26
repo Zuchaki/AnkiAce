@@ -87,7 +87,7 @@ export default function FavoriteX(){
     return(
         <>
         {favoriteDecks?
-        favoriteDecks.length>1?<>{console.log(favoriteDecks[curr].id)}
+        favoriteDecks.length>1?<>
         <div className={runNext?style.containerScrollXNextName:(runBack?style.containerScrollXBackName:style.containerScrollXNoName)}>
             <div className={style.row}>
             <div className={style.centerList}>
@@ -116,9 +116,10 @@ export default function FavoriteX(){
         </div>
         </>:
         <>
-        <Link style={{textDecoration:"none"}} to={`/profil/talia/${favoriteDecks[curr].id}`} >
-            <DeckElement color1={favoriteDecks[0].color1} color2={favoriteDecks[0].color2} title={favoriteDecks[0].title} toStudy={favoriteDecks[0].toStudy} count={favoriteDecks[0].count}/>
-        </Link>
+        {favoriteDecks && favoriteDecks[curr]?
+        <Link style={{textDecoration:"none"}} to={`/profil/talia/${favoriteDecks[curr].id}`}>
+            <DeckElement color1={favoriteDecks[curr].color1} color2={favoriteDecks[curr].color2} title={favoriteDecks[curr].title} toStudy={favoriteDecks[curr].toStudy} count={favoriteDecks[curr].count}/>
+        </Link>:<></>}
         </>
         :<></>}
         </>
