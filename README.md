@@ -71,5 +71,19 @@ src/hooks/useSevenDayWeek.js
     date: - day of the month [1-31],
     future: - is this date in future from now? [true/false],
     theDay: - is this date today date? [true/false],,
-    planned: - Never used now but i kept it for potential development of the application
+    planned: - never used now but i kept it for potential development of the application
 }
+```
+# What I learn?
+### React Quill2
+```
+npm i react-quill
+```
+React-Quill is a React component library that enables easy creation of text editors with a user interface based on the WYSIWYG format. React-Quill uses the Quill.js library, which is based on JavaScript and allows for text editing using formatting templates, including bold, italics, underlines, lists, and headers. React-Quill adds a React interface to Quill.js, making it easy to integrate the text editor with a React application. This allows developers to create text editors of varying complexity and customized to the needs of their application.
+
+### React Icons
+```
+npm i react-icons
+```
+React Icons is a library of popular icon packs that can be easily used in React projects. It provides a wide range of customizable, scalable, and accessible icons from popular icon sets such as Font Awesome, Material Design, and Feather Icons. React Icons enables developers to easily add icons to their React applications without having to manually manage and import individual icons.
+
