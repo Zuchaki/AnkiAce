@@ -32,7 +32,7 @@ After creating flashcards, we can finally **start studying**. To begin studying,
 
 ### 8. Study panel and options
 After starting the study, we can see the study panel. In the upper middle, we can see the **question (front side of the flashcard)**, and below it, there is a button labeled **"Sprawdz!" (in the future after adding EN - "Show answer!")**. After clicking on it, we can see the **answer (back side of the flashcard)** to the question. At the bottom of the study panel, there are three options:\
-1. A red button labeled "Fatalnie" (in the future after adding EN - "Bad").\
-2. A cream button labeled "Pół na pół" (in the future after adding EN - "Half and half").\
-3. A green button labeled "Łatwe!" (in the future after adding EN - "Easy").\
+**1. A red button** labeled "Fatalnie" (in the future after adding EN - "Bad").\
+**2. A cream button** labeled "Pół na pół" (in the future after adding EN - "Half and half").\
+**3. A green button** labeled "Łatwe!" (in the future after adding EN - "Easy").\
 
