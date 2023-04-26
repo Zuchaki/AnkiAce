@@ -1,0 +1,65 @@
+.titleContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 3;
+}
+.title{
+    position: relative;
+    z-index: 3;
+    margin:20px 0;
+    border-radius: 12px;
+    padding: 10px 40px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: left;
+}
+.myDecks{
+    width: 92%;
+    height: 100%;
+    min-height: 80vh;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow-y: scroll;
+}
+.myDecks::-webkit-scrollbar{
+    border-radius: 36px;
+    width: 6px;
+}
+.myDecks::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 36px;
+    margin-bottom: 20px;
+}
+.myDecks::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 36px;
+    margin-bottom: 20px;
+}
+.deckContainer{
+    z-index: 2;
+    width:300px;
+    display: flex;
+}
+@media(width<1100px){
+    .title{
+        position: relative;
+        z-index: 3;
+        margin:20px 0;
+        border-radius: 0px;
+        padding: 10px 40px;
+        font-size: 1.3rem;
+        border-bottom:1px solid #9f9f9f;
+        font-weight: 700;
+        text-align: center;
+        color:#383838;
+    }
+    .myDecks{
+        min-height: 60vh;
+    }
+}

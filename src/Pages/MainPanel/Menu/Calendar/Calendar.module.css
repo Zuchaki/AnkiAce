@@ -1,0 +1,28 @@
+.coll{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    margin-top: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.nameMain{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: flex-end;
+    font-size: 0.9rem;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: flex-end;
+    width:90%;
+}
+.singleName{
+    margin-top: 2px;
+    width: calc(90% / 7);
+}

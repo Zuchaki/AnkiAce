@@ -1,0 +1,205 @@
+.menuContainer{
+    margin:10px 20px;
+    border-radius: 20px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: calc(100vh - 20px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    backdrop-filter: blur(10px);
+}
+.menuImg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:url("../../../Assets/Photos/noise.jpg");
+    background-repeat: inherit;
+    background-size: cover;
+    filter: blur(200px);
+    opacity: 0.5;
+    background-position: center;
+}
+.menu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: none;
+}
+.nameContainer{
+    margin: 26px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.hello{
+    margin-left: 0px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #383838;
+}
+.hand{
+    background: url("../../../Assets/Photos/helloHand.png");
+    background-position: center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    margin:-12px 0 0 6px;
+}
+.name{
+    margin-top: 2px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.connect:hover .decksTitle{
+    color:black;
+    font-weight: 900;
+}
+
+.decksTitle{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #383838;
+    text-align: left;
+    transition-duration: 0.1s;
+}
+.star{
+    margin-left: 4px;
+    background: url("../../../Assets/Photos/star.png");
+    background-position: center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+.deckTitleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 84%;
+}
+.logoutContainer{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    background-color: #793aaf;
+    color:#f9f1fe;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    transition-duration: 0.2s;
+}
+.logout:hover{
+    background-color: #797aaf;
+    cursor: pointer;
+}
+.ICONMargin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 6px;
+}
+@media(width<1100px){
+    .menuContainer, .menuContainerOn, .menuContainerOff{
+        margin:0;
+        border-radius: 0px 20px 20px 0px;
+        width: 300px;
+        overflow: hidden;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        top:40px;
+        height: calc(100vh - 40px);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px, rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        backdrop-filter: blur(20px);
+    }
+    .menuContainerOn{
+        animation-name: menuIn;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;  
+    }
+    @keyframes menuIn {
+        0%{left: -400px;}
+        100%{left: 0px;}
+      }
+    .menuContainerOff{
+        animation-name: menuOff;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;  
+    }
+    @keyframes menuOff {
+        0%{left: 0px;}
+        100%{left: -400px;}
+      }
+    .menuImg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        background:#e8e8e8;
+        filter: blur(20px);
+        opacity: 0.3;
+        background-position: center;
+    }
+    .menu{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: none;
+    }
+    .nameContainer{
+        margin: 23px 0 4px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    .logoutContainer{
+        position: absolute;
+        bottom: 130px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,64 @@
+.containerToday{
+    width:28px;
+    height:80px;
+    background-color: #8e4ec6;
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.containerFuture{
+    width:28px;
+    height:50px;
+    background-color: #be93e4;
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.containerPast{
+    width:28px;
+    height:50px;
+    background-color: #be93e4;
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.number{
+    margin-bottom: 4px;
+    color: white;
+    border-radius: 360px;
+    font-size: 0.9rem;
+    padding: 3px;
+}
+@media(width<1100px){
+    .containerToday{
+        width:28px;
+        height:28px;
+        padding-top: 3px;
+        background-color: #8e4ec6;
+        border-radius: 36px;
+        align-items: center;
+    
+    }
+    .containerFuture{
+        width:28px;
+        height:28px;
+        padding-top: 3px;
+        background-color: #be93e4;
+        border-radius: 36px;
+        align-items: center;
+    
+    }
+    .containerPast{
+        width:28px;
+        height:28px;
+        padding-top: 3px;
+        background-color: #be93e4;
+        border-radius: 36px;
+        align-items: center;
+    }
+}
