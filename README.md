@@ -42,16 +42,17 @@ First of all, read the question on the front side of the flashcard and answer it
 
 ### Part of the code which calculates when the user should review the flashcard again.
 ```
-src/Pages/MainPanel/Content/StudyPanel/StudyPanel.js
+src/Pages/MainPanel/Content/StudyPanel/StudyPanel.js -> function lvlRead(lvl)
 ```
 
-```JS
+**Whan properties in the object mean in lvlRead(lvl)
+```
 {
     medium: - time in minutes to next study after choos option half and half,
     mediumLVL: - next lvl after choos option half and half,
-    mediumNext: - the word that will be on the button labeled **"Pół na pół!" (in the future after add EN - "Half and half")**,
+    mediumNext: - the word that will be on the button labeled "Pół na pół!" (in the future after add EN - "Half and half"),
     good: - time in minutes to next study after choos option easy,
     goodLVL: - next lvl after choos option easy,
-    goodNext: - the word that will be on the button labeled **"Łatwe!!" (in the future after add EN - "Easy")**
+    goodNext: - the word that will be on the button labeled "Łatwe!!" (in the future after add EN - "Easy")
 }
 ```
