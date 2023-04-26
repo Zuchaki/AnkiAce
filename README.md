@@ -58,7 +58,7 @@ src/Pages/MainPanel/Content/StudyPanel/StudyPanel.js -> function lvlRead(lvl)
 ```
 
 # What was hard?
-It was not easy for me to create the hook **useSevenDayWeek.js**. I spent a lot of time on it and needed to draw it out to understand how it works.\
+It was not easy for me to create the hook **useSevenDayWeek.js**. I spent a lot of time on it and needed to draw it out to understand how it works.
 
 **useSevenDayWeek.js location:**
 ```
