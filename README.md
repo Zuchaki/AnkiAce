@@ -12,7 +12,13 @@ First, you need to sign in using Google or email.
 ### 2. Main panel and menu
 After signing in, we can see the **main panel** and **menu**
 
-### 3. Create new deck
-In midle of main panel we can see button "Stwórz nową talię" (in future EN - "create new deck"). After click on it it will take as to new deck creation panel
+### 3. Creating a new deck
+In the middle of the main panel, we can see a button labeled "Stwórz nową talię" (in the future after add EN - "create new deck"). Clicking on this button will take us to the new deck creation panel.
+
+### 4. New deck creation panel
+There we need to set 2 things to our deck: **title** and **color**. Dont worry, we can edit both values at any time.
+
+### 5. Flashcards deck panel
+After creating a flashcard deck, we can open it. Once we have opened the deck, in the upper right corner, we can see 3 options: **delete**, **edit**, and **add to favorites**
 
 
