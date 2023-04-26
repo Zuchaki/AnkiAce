@@ -63,6 +63,9 @@
     opacity: 0.8; */
     background-position: center;
 }
+.outOfElementMenuClick{
+    display: none;
+}
 @media(width<1100px){
     .main{
         width:100vw;
@@ -98,5 +101,15 @@
     }
     .moreIcon{
         margin-left: 10px;
+    }
+    .outOfElementMenuClick{
+        display: block;
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 7;
+        background-color: transparent;
     }
 }

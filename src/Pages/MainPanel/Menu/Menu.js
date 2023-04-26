@@ -12,7 +12,7 @@ import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 
 
-export default function Menu(){
+export default function Menu(props){
 
     const TEMP = [["#6d56e5", "#a291f1"], ["#ed601b","#ed9563"], ["#d9184d","#e5678c"], ["#1f63c4","#689ddf"], ["#257580","#69a0a7"]]
     const [width, height] = useSizeScreen();
@@ -30,8 +30,8 @@ export default function Menu(){
     }
 
     return(
-        <>
-                    <div className={style.menuContainer}>
+        <>            
+                    <div className={props.animationMenu===1?style.menuContainerOn:props.animationMenu===2?style.menuContainerOff:style.menuContainer}>
                         <div className={style.menuImg}></div>
                         <div className={style.menu}>
 

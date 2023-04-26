@@ -37,14 +37,37 @@ export default function MainPanel(){
         singInChechk();
     },[])
 
+    const [animationMenu, setAnimationMenu] = useState(0);
+    const animationMenuHandler = () => {
+        if(showMenu){
+            setAnimationMenu(2)
+            setTimeout(()=>{
+                setShowMenu(false)
+                setAnimationMenu(0)
+            }, 500)
+        }
+        else{
+            setShowMenu(true)
+            setAnimationMenu(1)
+            setTimeout(()=>{
+                setAnimationMenu(0)
+            }, 500)
+        }
+    }
+
     return(
         <>
         <div className={style.main}>
             <div className={style.container}>
-                {width<1100?<div className={style.hiddenMenu}><CgDetailsMore size={38} className={style.moreIcon} onClick={() => setShowMenu(!showMenu)}/></div>:<></>}
+                {width<1100?
+                    <>
+                        <div className={style.hiddenMenu}><CgDetailsMore size={38} className={style.moreIcon} onClick={() => animationMenuHandler()}/></div>
+                        {showMenu?<div className={style.outOfElementMenuClick} onClick={() => animationMenuHandler()}></div>:<></>}
+                    </>
+                    :<></>}
                 {showMenu | width>1100?
                     <div className={style.menuContainer}>
-                        <Menu/>
+                        <Menu animationMenu={animationMenu} animationMenuHandler={animationMenuHandler}/>
                     </div>:<></>
                 }
 
