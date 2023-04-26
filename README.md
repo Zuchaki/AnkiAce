@@ -18,10 +18,14 @@ In the middle of the main panel, we can see a button labeled "Stwórz nową tali
 ### 4. New deck creation panel
 There we need to set 2 things to our deck: **title** and **color**. Dont worry, we can edit both values at any time.
 
-### 5. Flashcard deck - based options
+### 5. Managing a created flashcard deck
 After creating a flashcard deck, we can open it. Once we have opened the deck, in the upper right corner, we can see 3 options: **delete**, **edit**, and **add to favorites**
 
-### 6. Managing a created flashcard deck
-After creating a flashcard deck, we can open it. Once we have opened the deck, in the upper right corner, we can see 3 options: **delete**, **edit**, and **add to favorites**
+### 6. Creating a new flashcard
+In the middle of the main panel, we can see a button that, when clicked, takes us to the new flashcard creation panel
+
+### 7. Flashcard creation panel
+In flashcard creation panel we need to write front side of flashcard (question) and back side of flashcard (answer)
+
 
 
