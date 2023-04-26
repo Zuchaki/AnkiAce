@@ -45,7 +45,7 @@ First of all, read the question on the front side of the flashcard and answer it
 src/Pages/MainPanel/Content/StudyPanel/StudyPanel.js -> function lvlRead(lvl)
 ```
 
-**Whan properties in the object mean in lvlRead(lvl)**
+**Whan properties in the object mean after return lvlRead(lvl)**
 ```
 {
     medium: - time in minutes to next study after choos option half and half,
