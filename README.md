@@ -40,3 +40,7 @@ After starting the study, we can see the study panel. In the upper middle, we ca
 # How study its work?
 First of all, read the question on the front side of the flashcard and answer it to yourself. Next, click on the **"Sprawdz!" (in the future after adding EN - "Show answer!")** button to check if your answer matches the answer on the back side of the flashcard. Then, decide how well you know the flashcard by selecting one of the options using the buttons at the bottom: bad, half and half, easy. The system will calculate when you need to review the flashcard again.
 
+### Part of the code which calculates when the user should review the flashcard again.
+```
+src/Pages/MainPanel/Content/StudyPanel/StudyPanel.js
+```
