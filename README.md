@@ -44,3 +44,14 @@ First of all, read the question on the front side of the flashcard and answer it
 ```
 src/Pages/MainPanel/Content/StudyPanel/StudyPanel.js
 ```
+
+```JS
+{
+    medium: - time in minutes to next study after choos option half and half,
+    mediumLVL: - next lvl after choos option half and half,
+    mediumNext: - the word that will be on the button labeled **"Pół na pół!" (in the future after add EN - "Half and half")**,
+    good: - time in minutes to next study after choos option easy,
+    goodLVL: - next lvl after choos option easy,
+    goodNext: - the word that will be on the button labeled **"Łatwe!!" (in the future after add EN - "Easy")**
+}
+```
