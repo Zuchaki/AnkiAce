@@ -87,3 +87,5 @@ npm i react-icons
 ```
 React Icons is a library of popular icon packs that can be easily used in React projects. It provides a wide range of customizable, scalable, and accessible icons from popular icon sets such as Font Awesome, Material Design, and Feather Icons. React Icons enables developers to easily add icons to their React applications without having to manually manage and import individual icons.
 
+### I experimented with the composition of folders and files.
+I tried to organize most of the files and folders into the **/pages** folder and sorted them according to the part of the website ther are responsible for, but in the end, I think it was a bad idea. It's better to create a **/components** folder.
