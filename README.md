@@ -48,11 +48,19 @@ src/Pages/MainPanel/Content/StudyPanel/StudyPanel.js -> function lvlRead(lvl)
 **Whan properties in the object mean after return lvlRead(lvl)**
 ```
 {
-    medium: - time in minutes to next study after choos option half and half,
-    mediumLVL: - next lvl after choos option half and half,
+    medium: - time in minutes to next study after choose option half and half,
+    mediumLVL: - next lvl after choose option half and half,
     mediumNext: - the word that will be on the button labeled "Pół na pół!" (in the future after add EN - "Half and half"),
-    good: - time in minutes to next study after choos option easy,
-    goodLVL: - next lvl after choos option easy,
+    good: - time in minutes to next study after choose option easy,
+    goodLVL: - next lvl after choose option easy,
     goodNext: - the word that will be on the button labeled "Łatwe!!" (in the future after add EN - "Easy")
 }
+```
+
+# What was hard?
+It was not easy for me to create the hook **useSevenDayWeek.js**. I spent a lot of time on it and needed to draw it out to understand how it works./
+/
+**useSevenDayWeek.js location:**
+```
+src/hooks/useSevenDayWeek.js
 ```
