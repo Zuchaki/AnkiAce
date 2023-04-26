@@ -27,5 +27,5 @@ In the middle of the main panel, we can see a button that, when clicked, takes u
 ### 7. Flashcard creation panel
 In flashcard creation panel we need to write **front side of flashcard (question)** and **back side of flashcard (answer)**
 
-### 7. Flashcard creation panel
-After created flashcards now we can finali can start study. To start study you need to click on button in upper left corner
+### 7. Starting the study session
+After creating flashcards, we can finally **start studying**. To begin studying, we need to click on the button in the upper left corner labeled **"Start nauka!" (in the future after add EN - "Start study!")** If there writes instead **"Odpoczynek" (in the future after add EN - "Rest")** don't worry! It means that you have learned all you need for now, and you can take a break or add new flashcards if you can't get enough of studying. ;D
