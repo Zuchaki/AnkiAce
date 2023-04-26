@@ -2,7 +2,7 @@
 
 You can visit here https://ankiace-production.web.app/
 
-## What is anki?
+### What is anki?
 **anki** - A computer program designed for learning through the method of spaced repetition, where the frequency of repetitions depends on the level and pace of mastering the material. My app is based on it.
 
 # How it work
