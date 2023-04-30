@@ -85,26 +85,31 @@ const useDate =() => {
             else{
                 newCurrentDate = {...newCurrentDate, minute:newCurrentDate.minute+modifiAdd};
                 modifiAdd=0;
+                console.log("1. ",newCurrentDate)
             }
         }
 
         //add hours
         while(newCurrentDate.minute>=60){
             newCurrentDate = {...newCurrentDate, minute:newCurrentDate.minute-60, hours:newCurrentDate.hours+1};
+            console.log("2. ",newCurrentDate)
         }
 
         //add days
         while(newCurrentDate.hours>=24){
             newCurrentDate = {...newCurrentDate, hours:newCurrentDate.hours-24, day:newCurrentDate.day+1};
+            console.log("3. ",newCurrentDate)
         }
 
         //add months
-        while(newCurrentDate.day>=chechDay(newCurrentDate.month, newCurrentDate.year)){
+        while(newCurrentDate.day>chechDay(newCurrentDate.month, newCurrentDate.year)){
             newCurrentDate = {...newCurrentDate, day:newCurrentDate.day-chechDay(newCurrentDate.month, newCurrentDate.year), month:newCurrentDate.month+1};
+            console.log("4. ",newCurrentDate)
 
             //add years
             if(newCurrentDate.month>12){
                 newCurrentDate = {...newCurrentDate, month:1, year:newCurrentDate.year+1};
+                console.log("5. ",newCurrentDate)
             }
         }
         return(newCurrentDate)
