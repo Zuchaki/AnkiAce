@@ -73,7 +73,7 @@ const useSevenDayWeek = () => {
 
     //Pobieramy date
     const newDate = new Date();
-    const day = newDate.getDay();
+    const day = newDate.getDay()!=0?newDate.getDay():7;
     let date = newDate.getDate()+1;
     const month = newDate.getMonth()+1;
     const year = newDate.getFullYear();
@@ -84,12 +84,13 @@ const useSevenDayWeek = () => {
     let [giveDate, giveMonth] = existDay(month, date, day, year);
     let plannedMonth = giveMonth;
 
-
+    
     //Tu zapisujemy nasze obiekty z danymi odnośnie dnia
     const tab = [];
-
+    console.log(day, date, month, year)
     //Past days
     for(let i=0; i<day-1; i++){
+        
         if(chechDay(giveMonth, year)<giveDate){giveDate=1;plannedMonth++}
         tab.push({
             day:i+1,
