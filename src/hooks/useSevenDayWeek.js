@@ -87,10 +87,9 @@ const useSevenDayWeek = () => {
     
     //Tu zapisujemy nasze obiekty z danymi odnośnie dnia
     const tab = [];
-    console.log(day, date, month, year)
+
     //Past days
     for(let i=0; i<day-1; i++){
-        
         if(chechDay(giveMonth, year)<giveDate){giveDate=1;plannedMonth++}
         tab.push({
             day:i+1,
